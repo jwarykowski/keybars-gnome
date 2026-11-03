@@ -1,0 +1,19 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# the headless GNOME Shell test (make shell) needs GNOME Shell, so it runs
+# locally; CI lints and tests the logic
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    container:
+      image: localhost/forgejo-job:1
+    steps:
+      - uses: https://code.forgejo.org/actions/checkout@v4
+      - run: npm ci
+      - run: make lint test

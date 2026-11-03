@@ -1,0 +1,9 @@
+{
+  "uuid": "keybars@keybars.app",
+  "name": "keybars",
+  "description": "Notifications from the apps you choose light your keyboard through keybars Pro. Needs keybars Pro and its keybars-pro command.",
+  "shell-version": ["50"],
+  "url": "https://github.com/jwarykowski/keybars-gnome",
+  "settings-schema": "org.gnome.shell.extensions.keybars",
+  "version-name": "0.1.0"
+}

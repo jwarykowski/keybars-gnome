@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.keybars" path="/org/gnome/shell/extensions/keybars/">
+    <key name="all-apps" type="b">
+      <default>false</default>
+      <summary>Every app's notifications</summary>
+      <description>Send every app's notifications, not only the ones listed.</description>
+    </key>
+    <key name="apps" type="as">
+      <default>[]</default>
+      <summary>Apps</summary>
+      <description>Apps whose notifications are sent, by name (Slack) or ID (com.slack.Slack).</description>
+    </key>
+    <key name="command" type="s">
+      <default>''</default>
+      <summary>keybars-pro command</summary>
+      <description>Where keybars-pro is, if it isn't found.</description>
+    </key>
+  </schema>
+</schemalist>

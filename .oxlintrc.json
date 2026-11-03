@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "unicorn",
+    "oxc",
+    "import"
+  ],
+  "categories": {
+    "correctness": "error",
+    "suspicious": "warn"
+  },
+  "env": {
+    "es2024": true,
+    "node": true
+  },
+  "globals": {
+    "console": "readonly"
+  },
+  "ignorePatterns": [
+    "node_modules",
+    "dist"
+  ]
+}
